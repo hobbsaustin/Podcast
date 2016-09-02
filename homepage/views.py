@@ -1,6 +1,8 @@
-from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, logout, login as auth_login
+from django.shortcuts import render, redirect
+
 from . import forms
+
 
 def index(request):
     return render(request, 'homepage/index.html')
